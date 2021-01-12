@@ -7,7 +7,7 @@
     </v-row>
 
     <v-row class="camera-style elevation-3 justify-center align-center">
-      <v-col>
+      <v-col class="mt-2" align="center">
         <input
             style="display: none"
             id="file"
@@ -20,7 +20,7 @@
           <v-icon large>mdi-file</v-icon>
         </v-btn>
       </v-col>
-      <v-col>
+      <v-col class="mt-3" align="center">
         <v-btn color="secondary" v-show="!taken" :disabled="!cameraOn" icon outlined large @click="capture">
           <v-icon large>mdi-checkbox-blank-circle</v-icon>
         </v-btn>
@@ -28,7 +28,7 @@
           撮り直し
         </v-btn>
       </v-col>
-      <v-col>
+      <v-col class="mt-2" align="center">
         <v-btn :color="!cameraOn ? 'secondary' : ''" v-show="!taken" icon large @click="toggleCameraOnOff">
           <v-icon large>mdi-camera-off</v-icon>
         </v-btn>
@@ -43,11 +43,11 @@ import Canvas from "@/modules/infrastructure/canvas";
 import CanvasBuilder from "@/modules/infrastructure/canvasBuilder";
 
 @Component
-export default class KawaiiCamera extends Vue {
+export default class Camera extends Vue {
 
   @Prop() imageData!: string;
-  video: HTMLVideoElement;
-  canvas: Canvas;
+  video!: HTMLVideoElement;
+  canvas!: Canvas;
   taken = false;
   animationId = 0;
   cameraOn = true;
