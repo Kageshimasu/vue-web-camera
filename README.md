@@ -1,24 +1,25 @@
-# web-camera
+# Web Camera on VUE
 
-## Project setup
-```
-npm install
-```
+A Vue Component which is written in TypeScript
+![sample2](https://github.com/Kageshimasu/vue-web-camera/blob/master/docs/sample2.PNG)
+![sample1](https://github.com/Kageshimasu/vue-web-camera/blob/master/docs/sample1.PNG)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Table of Contents
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Examples](#examples)
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Features
+* can take a picture from your web-cam
+* can load an image from local
+<a name="features"/>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Installation
+* just install vuetify
+<a name="installation"/>
+
+## Examples
+```
+<Camera v-model="image" />
+```
