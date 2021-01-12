@@ -1,6 +1,6 @@
 # Web Camera on VUE
 
-A Vue Component which is written in TypeScript
+A Vue Component written in TypeScript
 ![sample2](https://github.com/Kageshimasu/vue-web-camera/blob/master/docs/sample2.PNG)
 ![sample1](https://github.com/Kageshimasu/vue-web-camera/blob/master/docs/sample1.PNG)
 
